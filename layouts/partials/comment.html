@@ -1,6 +1,8 @@
+{{ if .Site.Params.youyan }}
 <div style="padding-top: 40px">
-<!-- UY BEGIN -->
-<div id="uyan_frame"></div>
-<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2141557"></script>
-<!-- UY END -->
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid={{.Site.Params.youyan_id}}"></script>
+    <!-- UY END -->
 </div>
+{{ end }}
