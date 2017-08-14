@@ -10,5 +10,7 @@
 	    {{ .Content }}
 	</p>
 
-	{{ template "_internal/disqus.html" . }}
+	{{ partial "share" . }}
+	{{ partial "comment" . }}
+	<!-- {{ template "_internal/disqus.html" . }} -->
 {{ end }}

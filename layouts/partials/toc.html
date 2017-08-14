@@ -1,1 +1,22 @@
-{{.TableOfContents}}
+
+{{ if .Params.toc }}
+<style>
+/* #toc {
+    position: fixed;
+    left: 30px;
+    top: 30px;
+} */
+#toc ul { 
+  list-style-type: none;
+  margin: 0px; 
+}
+
+#toc ul li {
+    list-style-type:none;
+}
+
+</style>
+<div id="toc">
+    {{ .TableOfContents }}
+</div>
+{{ end }}
